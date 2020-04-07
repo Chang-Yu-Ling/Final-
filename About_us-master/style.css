@@ -1,0 +1,112 @@
+@font-face{
+font-family:SansTCLight;
+src:url("font/NotoSansTC-Light.otf")
+}
+
+@font-face{
+font-family:SansTCRegular;
+src:url("font/NotoSansTC-Regular.otf")
+}
+
+@font-face{
+font-family:SerifCJKtcBlack;
+src:url("font/NotoSerifCJKtc-Black.otf")
+}
+.fonttype1{
+font-size:24pt;
+font-family:SerifCJKtcBlack;
+color:#FFD400;
+text-shadow: 3px 1px #000000;
+}
+.fonttype2{
+font-size:16pt;
+font-family:SerifCJKtcBlack;
+color:#FFD400;
+text-shadow: 1px 1px #000000;
+}
+
+body{
+    background-image: url("material/About-us.png");
+    background-size: cover;
+    margin:0;
+}
+
+.name{	
+    color: #FFFFFF;
+}
+
+#member_box{
+margin:13vh auto;
+padding: 0 10vw 0 12vw;
+box-sizing: border-box;
+filter: none;
+transition:filter 200ms;
+}
+
+
+.member_paragraph1{
+float:left;
+margin: 120px 0 0 2vw;
+}
+
+
+.member_paragraph2{
+float:right;
+margin: 140px 6% 0 0;
+width:32%;
+word-break: break-all;
+}
+.member_hover:first-child .member_paragraph1{
+margin: 90px 0 0 2vw;
+}
+
+.member_details .member_paragraph1{
+
+margin: 120px 0 0 1.5vw;
+}
+
+.member_hover:hover{
+transform:scale(1,1);
+transition: all 200ms ease-out;
+transform:scale(1.010,1.010);
+}
+.member_card{
+float:left;
+width:18.5%;
+height:530px;
+margin:6px 0.15vw;
+border-radius: 15px;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.3);
+background-size:cover;
+
+
+}
+
+.member_details{
+position:fixed;
+top: 13vh;
+left:27.5vw;
+width:43%;
+height:530px;
+margin:6px 0;
+border-radius: 15px;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.85);
+background-size:65% 100%;
+background-repeat: no-repeat;
+z-index:2;
+display:none;
+}
+
+#member_box2{
+position:absolute;
+width:90vw;
+height:650px;
+top:5vh;
+left:3vw;
+z-index:-2;
+
+
+
+}
