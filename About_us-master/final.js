@@ -1,4 +1,5 @@
 var c = document.body.children;
+var windowHeight= $(window).height();
 var temp;
 function blur(){
 document.getElementById("member_box").style.filter = "blur(8px)";
@@ -36,3 +37,26 @@ document.getElementById("member_box").style.filter=='blur(8px)' ){
 
 });
 
+$(window).scroll(function() {
+	var height = $(window).scrollTop();
+
+  if(height < windowHeight) {
+console.log($('#sidebar:eq(1)'));
+		$('.sidebar').removeClass('active');
+		$('.sidebar:eq(0)').addClass('active');
+	} 
+else if(height>=windowHeight && height<(2*windowHeight)){
+
+		$('.sidebar').removeClass('active');
+		$('.sidebar:eq(1)').addClass('active');
+	}
+
+});
+
+$('.sidebar').click(function(){
+var t=$(this).index()*windowHeight +1;
+$('.sidebar').removeClass('active');
+$('.sidebar:eq('+$(this).index()+')').addClass('active');
+window.scrollTo({left:0,top: t,behavior: 'smooth'});
+
+});
