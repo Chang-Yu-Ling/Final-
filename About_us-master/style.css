@@ -24,11 +24,15 @@ font-family:SerifCJKtcBlack;
 color:#FFD400;
 text-shadow: 1px 1px #000000;
 }
-
+html{
+height:100%;
+}
 body{
     background-image: url("material/About-us.png");
     background-size: cover;
     margin:0;
+height:100%;
+background-attachment: fixed;
 }
 
 .name{	
@@ -36,8 +40,7 @@ body{
 }
 
 #member_box{
-margin:13vh auto;
-padding: 0 10vw 0 12vw;
+padding: 13vh 10vw 0 12vw;
 box-sizing: border-box;
 filter: none;
 transition:filter 200ms;
@@ -100,13 +103,195 @@ display:none;
 }
 
 #member_box2{
-position:absolute;
-width:90vw;
-height:650px;
-top:5vh;
-left:3vw;
-z-index:-2;
+position:fixed;
+width:100vw;
+height:100vh;
+top:0;
+left:0;
+z-index:-5;
+}
+
+.page{
+width:100%;
+height:100%;
+}
 
 
+/*團隊名稱*/
+.div1{
+    font-family: SerifCJKtcBlack;
+    color: white;
+height:15vh;
+    text-shadow: 1px 1px #000000;
+    letter-spacing: 10px;
+    position: relative;
+box-sizing: border-box;
+padding:60px 0 10px 11vw;
 
+    font-size: 45px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+/*白色透明匡*/
+.content{
+    display: block;
+    justify-content: center;
+    width: auto;
+    height: 530px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 15px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    position: relative;
+ 
+}
+.divhalf_left
+{
+width:40%;
+height:100%;
+margin:0;
+float:left;
+}
+.divhalf_right
+{
+box-sizing: border-box;
+margin:0;
+width:60%;
+height:100%;
+float:left;
+padding: 70px 10% 0 5%;
+}
+/*橫的關於我們*/
+.div2{
+width:100%;
+   height:17%;
+    font-family: SerifCJKtcBlack;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+    position: relative;
+  text-align:center;
+	padding:40px 0 0 5%;
+box-sizing: border-box;
+}
+
+
+/*直線*/
+#line{
+    width: 80%;
+    border-bottom: 1px solid #000000;
+    position: relative;
+    top: 0;
+    left: 12%;
+}
+
+/*敘述文字*/
+.div3{
+box-sizing: border-box;
+    font-family: SansTCRegular;
+    position: relative;
+ padding:5px 12% 0 18%;
+    width: 100%;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 1px
+
+}
+
+/*follow us*/
+.followus{
+    cursor: pointer;
+    position: relative;
+    width: 8.5vw;
+}
+
+
+//***********************************************************************//
+/*側邊按鍵*/
+.regular-about{
+    cursor: pointer;
+    font-family: SansTCRegular;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: white;
+    position: fixed;
+    top: 210px;
+    left: 20px;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
+
+.harpoon1{
+    position: fixed;
+    width: 128px;
+    top: 175px;
+}
+
+.light-member{
+    cursor: pointer;
+    font-family: SansTCLight;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: white;
+    position: fixed;
+    top: 285px;
+    left: 12px;
+    transform: rotate(-30deg);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.harpoon2{
+    position: fixed;
+    width: 85px;
+    top: 250px;
+    opacity: 0.7;
+}
+
+/*側邊欄滑下到一定的座標後觸發或者點擊後*/
+/*把class regular-about換成light-about*/
+/*harpoon1換成harpoon11，依此類推*/
+/*這邊要用js寫，再麻煩你了QAQ*/
+.light-about{
+    cursor: pointer;
+    font-family: SansTCLight;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: white;
+    position: fixed;
+    top: 225px;
+    left: 12px;
+    transform: rotate(-30deg);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.harpoon11{
+    position: fixed;
+    width: 85px;
+    top: 190px;
+    opacity: 0.7;
+}
+
+.regular-member{
+    cursor: pointer;
+    font-family: SansTCRegular;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: white;
+    position: fixed;
+    top: 270px;
+    left: 20px;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
+
+.harpoon22{
+    position: fixed;
+    width: 128px;
+    top: 235px;
 }
